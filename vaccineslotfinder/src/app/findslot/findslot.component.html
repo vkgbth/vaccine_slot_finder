@@ -11,7 +11,28 @@
         </div>
         <div class="page-body__details">
             <!--Forecast will be here soon...-->
-            <h2>Enter your pin code</h2>
+            <form class="form-horizontal m-4">
+                <div class="form-group m-4">
+                    <label class="control-label col-sm-2 " for="pincode">Pin Code:</label>
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter your local zipcode">
+                </div>
+                <div class="form-group m-4">
+                    <label class="control-label col-sm-2" for="mno">Mobile Number:</label>
+                    <input type="text" class="form-control" id="mno" placeholder="Enter 10 digit Mobile Number">
+                </div>
+                <!-- Default dropup button -->
+                <div class="form-group m-4">
+                    <label class="" for="age">Age:</label>
+                    <select class="form-control d-inline" id="age">
+                        <option>18+</option>
+                        <option>45+</option>
+                    </select>
+                </div>
+
+                <div class="form-group m-4">
+                    <button type="submit" class="btn btn-primary" (click)=onSubmit()>Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

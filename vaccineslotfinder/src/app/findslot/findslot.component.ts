@@ -11,5 +11,8 @@ export class FindslotComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onSubmit() {
+    alert("in progress"); //need to do api call from here
+  }
 
 }
